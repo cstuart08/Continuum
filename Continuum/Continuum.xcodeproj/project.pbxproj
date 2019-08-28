@@ -16,6 +16,9 @@
 		D4BDCE242315C28500F032F3 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BDCE232315C28500F032F3 /* Post.swift */; };
 		D4BDCE262315C70500F032F3 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BDCE252315C70500F032F3 /* Comment.swift */; };
 		D4BDCE282315C8E200F032F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BDCE272315C8E200F032F3 /* AppDelegate.swift */; };
+		D4BDCE2A2315C93C00F032F3 /* PostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BDCE292315C93C00F032F3 /* PostController.swift */; };
+		D4BDCE2D2315CBDF00F032F3 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BDCE2C2315CBDF00F032F3 /* PostTableViewCell.swift */; };
+		D4BDCE312315DCC600F032F3 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BDCE302315DCC600F032F3 /* DateHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		D4BDCE232315C28500F032F3 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		D4BDCE252315C70500F032F3 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		D4BDCE272315C8E200F032F3 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D4BDCE292315C93C00F032F3 /* PostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostController.swift; sourceTree = "<group>"; };
+		D4BDCE2C2315CBDF00F032F3 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		D4BDCE302315DCC600F032F3 /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,10 +68,12 @@
 		D4BDCE032315BEC100F032F3 /* Continuum */ = {
 			isa = PBXGroup;
 			children = (
+				D4BDCE2E2315DCAF00F032F3 /* Helpers */,
 				D4BDCE1A2315BF0300F032F3 /* Storyboards */,
 				D4BDCE192315BEF900F032F3 /* Models */,
 				D4BDCE182315BEF100F032F3 /* Model Controllers */,
 				D4BDCE172315BEE700F032F3 /* View Controllers */,
+				D4BDCE2B2315CBC300F032F3 /* Views */,
 				D4BDCE162315BED600F032F3 /* Resources */,
 			);
 			path = Continuum;
@@ -95,6 +103,7 @@
 		D4BDCE182315BEF100F032F3 /* Model Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D4BDCE292315C93C00F032F3 /* PostController.swift */,
 			);
 			path = "Model Controllers";
 			sourceTree = "<group>";
@@ -114,6 +123,22 @@
 				D4BDCE082315BEC100F032F3 /* Main.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		D4BDCE2B2315CBC300F032F3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D4BDCE2C2315CBDF00F032F3 /* PostTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D4BDCE2E2315DCAF00F032F3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D4BDCE302315DCC600F032F3 /* DateHelper.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,7 +215,10 @@
 				D4BDCE262315C70500F032F3 /* Comment.swift in Sources */,
 				D4BDCE202315C11700F032F3 /* AddPostTableViewController.swift in Sources */,
 				D4BDCE222315C1CC00F032F3 /* PostDetailTableViewController.swift in Sources */,
+				D4BDCE2D2315CBDF00F032F3 /* PostTableViewCell.swift in Sources */,
 				D4BDCE282315C8E200F032F3 /* AppDelegate.swift in Sources */,
+				D4BDCE2A2315C93C00F032F3 /* PostController.swift in Sources */,
+				D4BDCE312315DCC600F032F3 /* DateHelper.swift in Sources */,
 				D4BDCE1C2315C0E900F032F3 /* PostListTableViewController.swift in Sources */,
 				D4BDCE242315C28500F032F3 /* Post.swift in Sources */,
 			);
