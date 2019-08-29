@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -114,33 +115,30 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="5ku-QP-HSn">
-                                    <rect key="frame" x="95.5" y="34" width="223" height="273"/>
+                                    <rect key="frame" x="0.0" y="34" width="414" height="273"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="J2G-ho-K1z">
-                                            <rect key="frame" x="0.0" y="0.0" width="223" height="223"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" secondItem="J2G-ho-K1z" secondAttribute="height" multiplier="1:1" id="gBA-Bx-QMs"/>
-                                            </constraints>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="223"/>
                                         </imageView>
                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="cmp-Zk-lgz">
-                                            <rect key="frame" x="0.0" y="243" width="223" height="30"/>
+                                            <rect key="frame" x="0.0" y="243" width="414" height="30"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hOA-ZA-ktP">
-                                                    <rect key="frame" x="0.0" y="0.0" width="73" height="30"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="136.5" height="30"/>
                                                     <state key="normal" title="Comment"/>
                                                     <connections>
                                                         <action selector="commentButtonTapped:" destination="ygp-1e-6Dg" eventType="touchUpInside" id="d79-Kv-XwH"/>
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Mx-kG-BzN">
-                                                    <rect key="frame" x="75" y="0.0" width="73" height="30"/>
+                                                    <rect key="frame" x="138.5" y="0.0" width="137" height="30"/>
                                                     <state key="normal" title="Share"/>
                                                     <connections>
                                                         <action selector="shareButtonTapped:" destination="ygp-1e-6Dg" eventType="touchUpInside" id="Evo-7V-M5F"/>
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdp-yp-A5n">
-                                                    <rect key="frame" x="150" y="0.0" width="73" height="30"/>
+                                                    <rect key="frame" x="277.5" y="0.0" width="136.5" height="30"/>
                                                     <state key="normal" title="Follow Post"/>
                                                     <connections>
                                                         <action selector="followPostButtonTapped:" destination="ygp-1e-6Dg" eventType="touchUpInside" id="zmH-1y-e3a"/>
@@ -154,8 +152,10 @@
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstItem="5ku-QP-HSn" firstAttribute="centerX" secondItem="Gd1-u2-Bed" secondAttribute="centerX" id="2BV-z3-CG8"/>
+                                <constraint firstAttribute="trailing" secondItem="5ku-QP-HSn" secondAttribute="trailing" id="eQB-NU-H8J"/>
                                 <constraint firstItem="5ku-QP-HSn" firstAttribute="height" secondItem="Gd1-u2-Bed" secondAttribute="height" multiplier="0.8" id="qKq-zc-RcW"/>
                                 <constraint firstItem="5ku-QP-HSn" firstAttribute="centerY" secondItem="Gd1-u2-Bed" secondAttribute="centerY" id="uv3-YN-X85"/>
+                                <constraint firstItem="5ku-QP-HSn" firstAttribute="leading" secondItem="Gd1-u2-Bed" secondAttribute="leading" id="xBB-N8-2W5"/>
                             </constraints>
                         </view>
                         <prototypes>
@@ -273,7 +273,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oom-73-QsL">
-                                                    <rect key="frame" x="0.0" y="44" width="414" height="375"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="375.5"/>
                                                     <connections>
                                                         <segue destination="aGB-Oo-FaQ" kind="embed" identifier="addPostToPhotoSelector" id="L4L-1q-dOo"/>
                                                     </connections>
@@ -353,17 +353,14 @@
             <objects>
                 <viewController id="aGB-Oo-FaQ" customClass="PhotoSelectorViewController" customModule="Continuum" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aU7-sh-U7J">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="375.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zMJ-2B-0Yb">
-                                <rect key="frame" x="42" y="0.0" width="331.5" height="331.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="zMJ-2B-0Yb" secondAttribute="height" multiplier="1:1" id="WAZ-Ye-xbE"/>
-                                </constraints>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="375.5"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a4x-cL-k08">
-                                <rect key="frame" x="92" y="139" width="230" height="52"/>
+                                <rect key="frame" x="0.0" y="161" width="414" height="52"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                 <state key="normal" title="Select An Image"/>
                                 <connections>
@@ -373,14 +370,15 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="zMJ-2B-0Yb" firstAttribute="centerY" secondItem="a4x-cL-k08" secondAttribute="centerY" constant="0.75" id="99r-fL-jHh"/>
-                            <constraint firstItem="zMJ-2B-0Yb" firstAttribute="leading" secondItem="aU7-sh-U7J" secondAttribute="leading" constant="42" id="H1p-8H-Nto"/>
-                            <constraint firstItem="a4x-cL-k08" firstAttribute="top" secondItem="aU7-sh-U7J" secondAttribute="topMargin" constant="95" id="HcJ-rh-ols"/>
-                            <constraint firstAttribute="trailing" secondItem="zMJ-2B-0Yb" secondAttribute="trailing" constant="40.5" id="SFX-rZ-A8w"/>
-                            <constraint firstItem="zMJ-2B-0Yb" firstAttribute="top" secondItem="aU7-sh-U7J" secondAttribute="top" id="UwL-Tw-fO4"/>
-                            <constraint firstAttribute="bottom" secondItem="zMJ-2B-0Yb" secondAttribute="bottom" id="nu6-tR-wzW"/>
-                            <constraint firstItem="zMJ-2B-0Yb" firstAttribute="centerX" secondItem="a4x-cL-k08" secondAttribute="centerX" constant="0.75" id="yYC-Ws-KFr"/>
+                            <constraint firstAttribute="trailing" secondItem="zMJ-2B-0Yb" secondAttribute="trailing" id="7j3-HE-jwO"/>
+                            <constraint firstAttribute="bottom" secondItem="zMJ-2B-0Yb" secondAttribute="bottom" id="HbK-1v-nsr"/>
+                            <constraint firstItem="a4x-cL-k08" firstAttribute="top" secondItem="aU7-sh-U7J" secondAttribute="topMargin" constant="117" id="HcJ-rh-ols"/>
+                            <constraint firstItem="zMJ-2B-0Yb" firstAttribute="leading" secondItem="Rfw-1k-Kns" secondAttribute="leading" id="SE3-Fk-LBH"/>
+                            <constraint firstItem="Rfw-1k-Kns" firstAttribute="trailing" secondItem="a4x-cL-k08" secondAttribute="trailing" id="Tlg-IR-W5n"/>
+                            <constraint firstItem="a4x-cL-k08" firstAttribute="leading" secondItem="Rfw-1k-Kns" secondAttribute="leading" id="bgG-RX-KeV"/>
+                            <constraint firstItem="zMJ-2B-0Yb" firstAttribute="top" secondItem="aU7-sh-U7J" secondAttribute="top" id="ddF-Yd-7ND"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="Rfw-1k-Kns"/>
                     </view>
                     <connections>
                         <outlet property="imageView" destination="zMJ-2B-0Yb" id="FPf-ws-Oli"/>

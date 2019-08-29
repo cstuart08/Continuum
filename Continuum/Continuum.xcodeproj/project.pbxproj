@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D486C2EB23185ED800DF86BA /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D486C2EA23185ED800DF86BA /* CloudKit.framework */; };
 		D48A38CC2317072D00436E4C /* SearchableRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48A38CB2317072D00436E4C /* SearchableRecord.swift */; };
 		D48A38CE23172DCE00436E4C /* PhotoSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48A38CD23172DCE00436E4C /* PhotoSelectorViewController.swift */; };
 		D4BDCE0A2315BEC100F032F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4BDCE082315BEC100F032F3 /* Main.storyboard */; };
@@ -24,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D486C2E823185ED500DF86BA /* Continuum.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Continuum.entitlements; sourceTree = "<group>"; };
+		D486C2EA23185ED800DF86BA /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		D48A38CB2317072D00436E4C /* SearchableRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchableRecord.swift; sourceTree = "<group>"; };
 		D48A38CD23172DCE00436E4C /* PhotoSelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSelectorViewController.swift; sourceTree = "<group>"; };
 		D4BDCE012315BEC100F032F3 /* Continuum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Continuum.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,17 +50,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D486C2EB23185ED800DF86BA /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D486C2E923185ED800DF86BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D486C2EA23185ED800DF86BA /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D4BDCDF82315BEC100F032F3 = {
 			isa = PBXGroup;
 			children = (
 				D4BDCE032315BEC100F032F3 /* Continuum */,
 				D4BDCE022315BEC100F032F3 /* Products */,
+				D486C2E923185ED800DF86BA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,6 +85,7 @@
 		D4BDCE032315BEC100F032F3 /* Continuum */ = {
 			isa = PBXGroup;
 			children = (
+				D486C2E823185ED500DF86BA /* Continuum.entitlements */,
 				D4BDCE2E2315DCAF00F032F3 /* Helpers */,
 				D4BDCE1A2315BF0300F032F3 /* Storyboards */,
 				D4BDCE192315BEF900F032F3 /* Models */,
@@ -179,6 +193,17 @@
 				TargetAttributes = {
 					D4BDCE002315BEC100F032F3 = {
 						CreatedOnToolsVersion = 10.3;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -374,6 +399,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Continuum/Continuum.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KMTDCPCY5V;
 				INFOPLIST_FILE = "$(SRCROOT)/Continuum/Resources/Info.plist";
@@ -392,6 +418,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Continuum/Continuum.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KMTDCPCY5V;
 				INFOPLIST_FILE = "$(SRCROOT)/Continuum/Resources/Info.plist";

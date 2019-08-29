@@ -45,9 +45,6 @@ class AddPostTableViewController: UITableViewController, UINavigationControllerD
         self.tabBarController?.selectedIndex = 0
     }
     
-//    func saveImageToAlbum() {
-//        UIImageWriteToSavedPhotosAlbum(image, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
-//    }
     
     // MARK: - Navigation
     
