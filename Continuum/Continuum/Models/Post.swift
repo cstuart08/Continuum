@@ -32,3 +32,19 @@ class Post {
         self.photo = photo
     }
 }
+
+extension Post: Equatable {
+    static func == (lhs: Post, rhs: Post) -> Bool {
+        return lhs.photoData == rhs.photoData && lhs.timestamp == rhs.timestamp && lhs.caption == rhs.caption && lhs.comments == rhs.comments
+    }
+}
+
+extension Post: SearchableRecord {
+    func matches(searchTerm: String) -> Bool {
+        if caption.lowercased().contains(searchTerm.lowercased()) {
+            return true
+        } else {
+            return false
+        }
+    }
+}

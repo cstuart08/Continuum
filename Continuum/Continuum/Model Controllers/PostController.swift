@@ -13,7 +13,10 @@ class PostController {
     // MARK: - Singleton
     static let shared = PostController()
     
-    var posts: [Post] = []
+    var posts: [Post] = [
+    Post(photo: #imageLiteral(resourceName: "Paul_McCartney_in_October_2018"), caption: "I say hello"),
+    Post(photo: #imageLiteral(resourceName: "John_Lennon_1969_(cropped)"), caption: "You say goodbye")
+    ]
     
     func addComment(text: String, post: Post, completion: @escaping (Comment) -> Void) {
         let comment = Comment(text: text, post: post)

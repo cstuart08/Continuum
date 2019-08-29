@@ -60,6 +60,10 @@ class PostDetailTableViewController: UITableViewController {
     }
     
     @IBAction func shareButtonTapped(_ sender: Any) {
+        guard let image = post?.photo,
+            let caption = post?.caption else { return }
+        let activityController = UIActivityViewController(activityItems: [image, caption], applicationActivities: nil)
+        present(activityController, animated: true)
     }
     
     @IBAction func followPostButtonTapped(_ sender: Any) {

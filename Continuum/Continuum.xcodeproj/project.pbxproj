@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D48A38CC2317072D00436E4C /* SearchableRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48A38CB2317072D00436E4C /* SearchableRecord.swift */; };
+		D48A38CE23172DCE00436E4C /* PhotoSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48A38CD23172DCE00436E4C /* PhotoSelectorViewController.swift */; };
 		D4BDCE0A2315BEC100F032F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4BDCE082315BEC100F032F3 /* Main.storyboard */; };
 		D4BDCE0C2315BEC100F032F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4BDCE0B2315BEC100F032F3 /* Assets.xcassets */; };
 		D4BDCE0F2315BEC100F032F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4BDCE0D2315BEC100F032F3 /* LaunchScreen.storyboard */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D48A38CB2317072D00436E4C /* SearchableRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchableRecord.swift; sourceTree = "<group>"; };
+		D48A38CD23172DCE00436E4C /* PhotoSelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSelectorViewController.swift; sourceTree = "<group>"; };
 		D4BDCE012315BEC100F032F3 /* Continuum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Continuum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4BDCE092315BEC100F032F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D4BDCE0B2315BEC100F032F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -96,6 +100,7 @@
 				D4BDCE1B2315C0E900F032F3 /* PostListTableViewController.swift */,
 				D4BDCE1F2315C11700F032F3 /* AddPostTableViewController.swift */,
 				D4BDCE212315C1CC00F032F3 /* PostDetailTableViewController.swift */,
+				D48A38CD23172DCE00436E4C /* PhotoSelectorViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -137,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				D4BDCE302315DCC600F032F3 /* DateHelper.swift */,
+				D48A38CB2317072D00436E4C /* SearchableRecord.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -212,7 +218,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D48A38CC2317072D00436E4C /* SearchableRecord.swift in Sources */,
 				D4BDCE262315C70500F032F3 /* Comment.swift in Sources */,
+				D48A38CE23172DCE00436E4C /* PhotoSelectorViewController.swift in Sources */,
 				D4BDCE202315C11700F032F3 /* AddPostTableViewController.swift in Sources */,
 				D4BDCE222315C1CC00F032F3 /* PostDetailTableViewController.swift in Sources */,
 				D4BDCE2D2315CBDF00F032F3 /* PostTableViewCell.swift in Sources */,

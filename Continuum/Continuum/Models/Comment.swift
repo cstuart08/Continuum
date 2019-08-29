@@ -20,3 +20,19 @@ class Comment {
         self.post = post
     }
 }
+
+extension Comment: Equatable {
+    static func == (lhs: Comment, rhs: Comment) -> Bool {
+        return lhs.text == rhs.text && lhs.timestamp == rhs.timestamp && lhs.post == rhs.post
+    }
+}
+
+extension Comment: SearchableRecord {
+    func matches(searchTerm: String) -> Bool {
+        if text.lowercased().contains(searchTerm.lowercased()) {
+            return true
+        } else {
+            return false
+        }
+    }
+}
